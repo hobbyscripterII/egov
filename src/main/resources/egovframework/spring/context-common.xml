@@ -11,7 +11,8 @@
 	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<property name="basenames">
 			<list>
-				<value>classpath:/egovframework/message/message-common</value>
+				<value>classpath:/egovframework/message/message-common</value> <!-- _en, _ko 생략 가능(message-common_ko.properties -->
+				<value>classpath:/egovframework/message/message-test</value> <!-- properties 파일 경로 설정(확장자 생략 가능) -->
 				<value>classpath:/egovframework/rte/fdl/idgnr/messages/idgnr</value>
 				<value>classpath:/egovframework/rte/fdl/property/messages/properties</value>
 			</list>

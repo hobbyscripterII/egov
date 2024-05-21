@@ -23,38 +23,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><spring:message code="title.sample" /></title>
+    <title><spring:message code="title.test" /></title>
     <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/sample.css'/>"/>
-    <script type="text/javaScript" language="javascript" defer="defer">
-        <!--
-        /* 글 수정 화면 function */
-        function fn_egov_select(id) {
-        	document.listForm.selectedId.value = id;
-           	document.listForm.action = "<c:url value='/updateSampleView.do'/>";
-           	document.listForm.submit();
-        }
-        
-        /* 글 등록 화면 function */
-        function fn_egov_addView() {
-           	document.listForm.action = "<c:url value='/addSample.do'/>";
-           	document.listForm.submit();
-        }
-        
-        /* 글 목록 화면 function */
-        function fn_egov_selectList() {
-        	document.listForm.action = "<c:url value='/egovSampleList.do'/>";
-           	document.listForm.submit();
-        }
-        
-        /* pagination 페이지 링크 function */
-        function fn_egov_link_page(pageNo){
-        	document.listForm.pageIndex.value = pageNo;
-        	document.listForm.action = "<c:url value='/egovSampleList.do'/>";
-           	document.listForm.submit();
-        }
-        
-        //-->
-    </script>
 </head>
 
 <body style="text-align:center; margin:0 auto; display:inline; padding-top:100px;">
@@ -64,7 +34,7 @@
         	<!-- 타이틀 -->
         	<div id="title">
         		<ul>
-        			<li><img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/><spring:message code="list.sample" /></li>
+        			<li><img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/><spring:message code="list.test" /></li>
         		</ul>
         	</div>
         	<!-- // 타이틀 -->
